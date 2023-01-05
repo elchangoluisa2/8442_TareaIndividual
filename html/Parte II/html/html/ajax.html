@@ -46,14 +46,14 @@
 </head>
 <script>
   function loadXMLDoc() {
-    
+    var url = "https://github.com/elchangoluisa2/8443_TareaIndividual/blob/main/html/Parte%20II/html/html/ajax.txt"
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         document.getElementById("demo").innerHTML = this.responseText;
      }
     };
-    xhr.open("GET", "ajax.txt", true);
+    xhr.open("GET", url, true);
     xhr.send();
   }
 </script>
